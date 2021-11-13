@@ -570,9 +570,9 @@
         "base_url":"https://www.muslim-shop.com/",
         "domains_subscription_id":14,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "is_active":false,
-        "time":1000,
+        "time":100,
         "next":true,
         "next_page":"div.pages.bottom  li.next a:not([class='disabled'])",
         "product_href_selector":"div#produkt_liste div.product-thumb-info-content.text-center h4 a",
@@ -587,14 +587,54 @@
         }
            
     },
+    "15": {   
+        "name":"AlvinaOnlineDE",
+        "base_url":"https://www.alvinaonline.com",
+        "domains_subscription_id":15,
+        "total_product_count":"div#TotalProduct",
+        "one_page_count":47,
+        "next_page_path":"?p=",
+        "select_attribute":"href",
+        "render" : false,
+        "scroll":true,
+        "next":true,
+        "time":2000,
+        "is_active":false,
+        "product_href_selector":"div.PrdItemBox a",
+        "urls":{
+            "Abaya/Topcoat":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/ferace/",
+                "https://www.alvinaonline.com/tr/tesettur-giyim/trenckot/"
+            ],
+            "Dress":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/elbise/"
+            ],
+            "Tracksuit":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/esofman-takimi/"
+            ],
+            "Tunic":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/tunik/"
+            ],
+            "Evenin Dress":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/abiye-elbise/"
+            ],
+            "Shawl/Scarf":[
+                "https://en.zalando.de/women/?q=long+sleeve+cocktail+maxi+dresses"
+            ],
+            "Suit":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/pantolonlu-takim/",
+                "https://www.alvinaonline.com/tr/tesettur-giyim/etekli-takim/"
+            ]
+        } 
+    },
     "16": {   
         "name":"ZalandoDE",
         "base_url":"https://en.zalando.de",
         "domains_subscription_id":16,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "is_active":false,
-        "time":1500,
+        "time":200,
         "next":true,
         "next_page":"div._0xLoFW.FCIprz a:last-child",
         "product_href_selector":"article[role=\"link\"] > a",
@@ -656,9 +696,9 @@
         "base_url":"https://www.zalando.fr",
         "domains_subscription_id":19,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
-        "time":1500,
+        "time":200,
         "is_active":false,
         "next_page":"div._0xLoFW.FCIprz a:last-child",
         "product_href_selector":"article[role=\"link\"] > a",
@@ -685,9 +725,9 @@
         "base_url":"https://neyssa-shop.com",
         "domains_subscription_id":20,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "is_active":false,
-        "time":1500,
+        "time":200,
         "next":true,
         "next_page":"div#pagination_bottom li.pagination_next a",
         "product_href_selector":"h2.product-name-container a.product-name",
@@ -706,6 +746,85 @@
             ],
             "Evenin Dress":[
                 "https://neyssa-shop.com/en/88-wedding-time"
+            ]
+        } 
+    },
+    "21": {   
+        "name":"AlvinaOnlineFR",
+        "base_url":"https://www.alvinaonline.com",
+        "domains_subscription_id":21,
+        "total_product_count":"div#TotalProduct",
+        "one_page_count":47,
+        "next_page_path":"?p=",
+        "select_attribute":"href",
+        "render" : false,
+        "scroll":true,
+        "next":true,
+        "time":2000,
+        "is_active":false,
+        "product_href_selector":"div.PrdItemBox a",
+        "urls":{
+            "Abaya/Topcoat":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/ferace/",
+                "https://www.alvinaonline.com/tr/tesettur-giyim/trenckot/"
+            ],
+            "Dress":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/elbise/"
+            ],
+            "Tracksuit":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/esofman-takimi/"
+            ],
+            "Tunic":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/tunik/"
+            ],
+            "Evenin Dress":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/abiye-elbise/"
+            ],
+            "Shawl/Scarf":[
+                "https://en.zalando.de/women/?q=long+sleeve+cocktail+maxi+dresses"
+            ],
+            "Suit":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/pantolonlu-takim/",
+                "https://www.alvinaonline.com/tr/tesettur-giyim/etekli-takim/"
+            ]
+        } 
+    },
+    "22": {   
+        "name":"FeizaonlineFR",
+        "base_url":"https://www.feizaonline.com",
+        "domains_subscription_id":22,
+        "total_product_count":"div.col-sm-6.text-right",
+        "split_after_count_text":"of",
+        "split_before_count_text":"(",
+        "next_page_path":"?page=",
+        "one_page_count":48,
+        "select_attribute":"href",
+        "render" : false,
+        "scroll":true,
+        "is_active":false,
+        "product_href_selector":"div.image a",
+        "urls":{
+            "Abaya/Topcoat":[
+                "https://www.feizaonline.com/outwear/hijab-abayas"
+            ],
+            "Dress":[
+                "https://www.feizaonline.com/clothing/dresses"
+            ],
+            "Tracksuit":[
+                "https://www.feizaonline.com/swimwear-sportswear/modest-tracksuits"
+            ],
+            "Tunic":[
+                "https://www.feizaonline.com/clothing/tunics"
+            ],
+            "Evenin Dress":[
+                "https://www.feizaonline.com/clothing/evening-dresses"
+            ],
+            "Shawl/Scarf":[
+                "https://www.feizaonline.com/shawls",
+                "https://www.feizaonline.com/scarfs"
+            ],
+            "Suit":[
+                "https://www.feizaonline.com/clothing/suits"
             ]
         } 
     },
@@ -780,6 +899,72 @@
 
 
         }
+    },
+    "25": {   
+        "name":"AlvinaOnlineUK",
+        "base_url":"https://www.alvinaonline.com",
+        "domains_subscription_id":25,
+        "total_product_count":"div#TotalProduct",
+        "one_page_count":47,
+        "next_page_path":"?p=",
+        "select_attribute":"href",
+        "render" : false,
+        "scroll":true,
+        "next":true,
+        "time":2000,
+        "is_active":false,
+        "product_href_selector":"div.PrdItemBox a",
+        "urls":{
+            "Abaya/Topcoat":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/ferace/",
+                "https://www.alvinaonline.com/tr/tesettur-giyim/trenckot/"
+            ],
+            "Dress":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/elbise/"
+            ],
+            "Tracksuit":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/esofman-takimi/"
+            ],
+            "Tunic":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/tunik/"
+            ],
+            "Evenin Dress":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/abiye-elbise/"
+            ],
+            "Shawl/Scarf":[
+                "https://en.zalando.de/women/?q=long+sleeve+cocktail+maxi+dresses"
+            ],
+            "Suit":[
+                "https://www.alvinaonline.com/tr/tesettur-giyim/pantolonlu-takim/",
+                "https://www.alvinaonline.com/tr/tesettur-giyim/etekli-takim/"
+            ]
+        } 
+    },
+    "27": {   
+        "name":"AabcollectionUK",
+        "base_url":"https://aabcollection.com",
+        "domains_subscription_id":27,
+        "render" : true,
+        "scroll":true,
+        "next":true,
+        "time":2200,
+        "is_active":false,
+        "product_href_selector":"div#bc-sf-filter-products div#product_single span.product-image.product-image-hover a.fixed-ratio.portrait-crop",
+        "urls":{
+            "Abaya":[
+                "https://aabcollection.com/search?q=abaya&_=pf&pf_pt_product_type=Abaya"
+            ],
+            "Dress":[
+                "https://aabcollection.com/search?q=dress&_=pf&pf_pt_product_type=Midis%20%26%20Tops&pf_pt_product_type=Kaftan&pf_pt_product_type=Maxi%20Dress&pf_pt_product_type=Shirt%20Dress&pf_pt_product_type=Slip%20Dress"
+            ],
+            "Shawl/Scarf":[
+                "https://aabcollection.com/collections/hijabs"
+            ],
+            "Tunic":[
+                "https://aabcollection.com/search?q=tunic"
+            ]
+        }
+           
     },
     "28": {   
         "name":"EastessenceUK",
@@ -869,7 +1054,7 @@
         "base_url":"https://www.artizara.com",
         "domains_subscription_id":30,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
         "time":2200,
         "is_category":false,
@@ -927,6 +1112,29 @@
                 "https://eastessence.com/collections/activewear"
 
             ] 
+        } 
+    },
+    "33": {   
+        "name":"AnnahaririUS",
+        "base_url":"https://www.annahariri.com",
+        "domains_subscription_id":33,
+        "scroll":false,
+        "next":true,
+        "time":200,
+        "render" : true,
+        "next_page":"div.pagination span.next a",
+        "is_active":false,
+        "product_href_selector":"div[class='grid grid--uniform'] div.grid-product__content a",
+        "urls":{
+            "Abaya/Topcoat":[
+                "https://www.annahariri.com/search?type=product&q=abaya"
+            ],
+            "Dress":[
+                "https://www.annahariri.com/search?type=product&q=dress"
+            ],
+            "Suit":[
+                "https://www.annahariri.com/search?type=product&q=set"
+            ]
         } 
     },
     "34": {   
@@ -1025,10 +1233,10 @@
         "base_url":"https://en-sa.namshi.com",
         "domains_subscription_id":36,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
         "is_active":false,
-        "time":1000,
+        "time":200,
         "popup_close":"document.querySelector('button#wzrk-cancel').click();document.querySelector('a.nmModal__close').click();",
         "next_page":"a#next_page",
         "product_href_selector":"li.listing.closed a",
@@ -1060,9 +1268,9 @@
         "base_url":"https://www.jollychic.com",
         "domains_subscription_id":38,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
-        "time":1500,
+        "time":200,
         "is_active":false,
         "country_select":"document.querySelector('div.sub-dropdown-list li:nth-child(1) a').click()",
         "next_page":"div.pro_list_page a.ui-page-next",
@@ -1089,12 +1297,164 @@
             ]
         } 
     },
+    "39": {   
+        "name":"AliexpressKSA",
+        "base_url":"https://www.aliexpress.com",
+        "domains_subscription_id":39,
+        "render" : true,
+        "scroll":false,
+        "next":true,
+        "next_page":"div.list-pagination button.next-next",
+        "time":200,
+        "is_active":false,
+        "product_href_selector":"div.product-container div.top-container + div.JIIxO a._9tla3",
+        "urls":{
+            "Dress":[
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=modest+dress&ltype=wholesale&SortType=default&minPrice=0.1&maxPrice=20",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=modest+dress&ltype=wholesale&SortType=default&minPrice=20&maxPrice=50",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=modest+dress&ltype=wholesale&SortType=default&minPrice=50&maxPrice=50000",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=women+abaya&ltype=wholesale&SortType=default&minPrice=0.1&maxPrice=15",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=women+abaya&ltype=wholesale&SortType=default&minPrice=15&maxPrice=20",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=women+abaya&ltype=wholesale&SortType=default&minPrice=20&maxPrice=30",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=women+abaya&ltype=wholesale&SortType=default&minPrice=30&maxPrice=40",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=women+abaya&ltype=wholesale&SortType=default&minPrice=40&maxPrice=100",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=women+abaya&ltype=wholesale&SortType=default&minPrice=100&maxPrice=50000",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200000782&SearchText=muslim+suit&ltype=wholesale&SortType=default&minPrice=0.1&maxPrice=500000"  
+            ],
+            "Abaya/Topcoat":[
+                 "https://tr.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=women+abaya&ltype=wholesale&SortType=default&maxPrice=31.0&page=1&pvid=200000137-201440888&isrefine=y",
+                 "https://tr.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=women+abaya&ltype=wholesale&SortType=default&minPrice=31&maxPrice=5000&page=1&pvid=200000137-201440888&isrefine=y"
+            ],
+            "Tunic":[
+                "https://www.aliexpress.com/category/206081801/women-tops.html?trafficChannel=main&catName=women-tops&CatId=206081801&ltype=wholesale&SortType=default&minPrice=0.1&maxPrice=50",
+                "https://www.aliexpress.com/category/206081801/women-tops.html?trafficChannel=main&catName=women-tops&CatId=206081801&ltype=wholesale&SortType=default&minPrice=50&maxPrice=50000"
+            ],
+            "Suit":[
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200000782&SearchText=muslim+suit&ltype=wholesale&SortType=default&minPrice=0.1&maxPrice=500000"
+            ],
+            "Pyjama Set":[
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=0.1&maxPrice=2",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=2&maxPrice=3",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=3&maxPrice=3.5",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=3.5&maxPrice=4",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=4&maxPrice=4.5",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=4.5&maxPrice=5",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=5&maxPrice=6",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=6&maxPrice=7",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=7&maxPrice=8",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=8&maxPrice=9",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=10&maxPrice=11",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=11&maxPrice=12",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=12&maxPrice=13",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=13&maxPrice=14",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=14&maxPrice=15",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=15&maxPrice=16",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=16&maxPrice=17",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=17&maxPrice=18",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=18&maxPrice=19",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=19&maxPrice=20",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=20&maxPrice=22",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=22&maxPrice=24",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=24&maxPrice=26",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=26&maxPrice=28",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=28&maxPrice=30",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=30&maxPrice=35",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=35&maxPrice=550",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=pyjama+sets+women&ltype=wholesale&SortType=default&minPrice=550&maxPrice=500000"
+            ],
+            "Bags":[
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=0.1&maxPrice=1",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=1&maxPrice=1.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=1.5&maxPrice=2",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=2&maxPrice=2.3",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=2.3&maxPrice=2.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=2.5&maxPrice=2.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=2.8&maxPrice=3",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=3&maxPrice=3.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=3.5&maxPrice=3.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=3.8&maxPrice=4",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=4&maxPrice=4.3",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=4.3&maxPrice=4.6",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=4.6&maxPrice=4.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=4.8&maxPrice=5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=5&maxPrice=5.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=5.5&maxPrice=6",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=6&maxPrice=6.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=6.5&maxPrice=7",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=7&maxPrice=7.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=7.5&maxPrice=7.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=7.8&maxPrice=8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=8&maxPrice=8.4",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=8.4&maxPrice=8.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=8.8&maxPrice=9",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=9&maxPrice=9.3",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=9.3&maxPrice=9.6",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=9.6&maxPrice=10",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=10&maxPrice=10.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=10.5&maxPrice=11",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=11&maxPrice=11.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=11.5&maxPrice=11.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=11.8&maxPrice=12.1",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=12.1&maxPrice=12.4",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=12.4&maxPrice=12.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=12.8&maxPrice=13",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=13&maxPrice=13.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=13.5&maxPrice=13.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=13.8&maxPrice=14",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=14&maxPrice=14.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=14.5&maxPrice=14.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=14.8&maxPrice=15",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=15&maxPrice=15.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=15.5&maxPrice=15.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=15.8&maxPrice=16",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=16&maxPrice=16.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=16.5&maxPrice=16.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=16.8&maxPrice=17",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=17&maxPrice=17.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=17.5&maxPrice=17.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=17.8&maxPrice=18",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=18&maxPrice=18.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=18.5&maxPrice=19",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=19&maxPrice=19.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=19.5&maxPrice=20",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=20&maxPrice=20.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=20.5&maxPrice=21",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=21&maxPrice=22",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=22&maxPrice=23",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=23&maxPrice=24",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=24&maxPrice=25",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=25&maxPrice=26",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=26&maxPrice=27",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=27&maxPrice=28",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=28&maxPrice=30",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=30&maxPrice=32",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=32&maxPrice=35",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=35&maxPrice=40",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=40&maxPrice=45",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=45&maxPrice=50",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=50&maxPrice=55",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=55&maxPrice=60",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=60&maxPrice=65",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=65&maxPrice=80",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=80&maxPrice=100",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=100&maxPrice=150",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=150&maxPrice=250",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=250&maxPrice=50000"
+            ],
+            "Shawl/Scarf":[
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=scarf+women&ltype=wholesale&SortType=default&minPrice=0.1&maxPrice=5",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=scarf+women&ltype=wholesale&SortType=default&minPrice=5&maxPrice=10",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=scarf+women&ltype=wholesale&SortType=default&minPrice=10&maxPrice=20",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=scarf+women&ltype=wholesale&SortType=default&minPrice=20&maxPrice=20000"
+            ]
+        } 
+    },
     "40": {   
         "name":"NamshiUAE",
         "base_url":"https://en-ae.namshi.com",
         "domains_subscription_id":40,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
         "is_active":false,
         "next_page":"a#next_page",
@@ -1119,6 +1479,26 @@
             ]
         }
            
+    },
+    "41": {   
+        "name":"VogaclosetUAE",
+        "base_url":"https://vogacloset.com",
+        "domains_subscription_id":41,
+        "render" : true,
+        "wait_before_load":5000,
+        "scroll":true,
+        "next":false,
+        "time":2200,
+        "is_active":false,
+        "product_href_selector":"a.item_productc__name__1QSmt.uit-listing-product-name-link",
+        "urls":{
+            "Dress":[
+                "https://vogacloset.com/catalogsearch/result/?q=modest&categories=3%2C55&product_type=13642"
+            ],
+            "Shawl/Scarf":[
+                "https://vogacloset.com/catalogsearch/result/?q=scarf"
+            ]
+        } 
     },
     "44": {   
         "name":"SefamerveDE",
@@ -1164,20 +1544,224 @@
         "base_url":"https://www.aliexpress.com",
         "domains_subscription_id":45,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
         "next_page":"div.list-pagination button.next-next",
-        "time":2200,
+        "time":200,
         "is_active":false,
         "product_href_selector":"div.product-container div.top-container + div.JIIxO a._9tla3",
         "urls":{
-            "Trabzonspor":[
-                "https://tr.aliexpress.com/wholesale?catId=0&initiative_id=AS_20210923102509&SearchText=trabzonspor"
-
+            "Dress":[
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=modest+dress&ltype=wholesale&SortType=default&minPrice=0.1&maxPrice=20",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=modest+dress&ltype=wholesale&SortType=default&minPrice=20&maxPrice=50",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=modest+dress&ltype=wholesale&SortType=default&minPrice=50&maxPrice=50000"  
             ],
-            "Nike":[
-                "https://tr.aliexpress.com/wholesale?spm=a2g0o.productlist.0.0.61e963aftrVBp4&catId=322&SearchText=nike"
-
+            "Tunic":[
+                "https://www.aliexpress.com/category/206081801/women-tops.html?trafficChannel=main&catName=women-tops&CatId=206081801&ltype=wholesale&SortType=default&minPrice=0.1&maxPrice=50",
+                "https://www.aliexpress.com/category/206081801/women-tops.html?trafficChannel=main&catName=women-tops&CatId=206081801&ltype=wholesale&SortType=default&minPrice=50&maxPrice=50000"
+            ],
+            "Suit":[
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200000782&SearchText=muslim+suit&ltype=wholesale&SortType=default&minPrice=0.1&maxPrice=500000"
+            ],
+            "Shoes":[
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=0.1&maxPrice=0.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=0.5&maxPrice=0.6&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=0.6&maxPrice=0.8&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=0.8&maxPrice=0.9&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=0.9&maxPrice=1.2&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=1.2&maxPrice=1.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=1.5&maxPrice=1.8&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=1.8&maxPrice=2&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=2&maxPrice=2.3&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=2.3&maxPrice=2.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=2.5&maxPrice=2.8&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=2.8&maxPrice=3&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=3&maxPrice=3.4&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=3.4&maxPrice=3.8&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=3.8&maxPrice=4.2&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=4.2&maxPrice=4.6&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=4.6&maxPrice=5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=5&maxPrice=5.3&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=5.3&maxPrice=5.6&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=5.6&maxPrice=6&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=6&maxPrice=6.3&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=6.3&maxPrice=6.6&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=6.6&maxPrice=6.8&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=6.8&maxPrice=7&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=7&maxPrice=7.4&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=7.4&maxPrice=7.6&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=7.6&maxPrice=7.8&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=7.8&maxPrice=8&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=8&maxPrice=8.3&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=8.3&maxPrice=8.6&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=8.6&maxPrice=8.8&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=8.8&maxPrice=9&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=9&maxPrice=9.3&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=9.3&maxPrice=9.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=9.5&maxPrice=9.8&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=9.8&maxPrice=10&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=10&maxPrice=10.3&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=10.3&maxPrice=10.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=10.5&maxPrice=10.8&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=10.8&maxPrice=11&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=11&maxPrice=11.3&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=11.3&maxPrice=11.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=11.5&maxPrice=11.8&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=11.8&maxPrice=12&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=12&maxPrice=12.3&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=12.3&maxPrice=12.6&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=12.6&maxPrice=12.9&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=12.9&maxPrice=13.3&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=13.3&maxPrice=13.6&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=13.6&maxPrice=14&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=14&maxPrice=14.3&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=14.3&maxPrice=14.6&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=14.6&maxPrice=14.8&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=14.8&maxPrice=15&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=15&maxPrice=15.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=15.5&maxPrice=15.9&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=15.9&maxPrice=16.4&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=16.4&maxPrice=16.8&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=16.8&maxPrice=17.2&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=17.2&maxPrice=17.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=17.5&maxPrice=17.9&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=17.9&maxPrice=18.3&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=18.3&maxPrice=18.6&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=18.6&maxPrice=19&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=19&maxPrice=19.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=19.5&maxPrice=20&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=20&maxPrice=20.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=20.5&maxPrice=21&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=21&maxPrice=21.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=21.5&maxPrice=22&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=22&maxPrice=22.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=22.5&maxPrice=23&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=23&maxPrice=23.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=23.5&maxPrice=24&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=24&maxPrice=24.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=24.5&maxPrice=25&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=25&maxPrice=25.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=25.5&maxPrice=26&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=26&maxPrice=26.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=26.5&maxPrice=27&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=27&maxPrice=27.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=27.5&maxPrice=28&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=28&maxPrice=28.5&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=28.5&maxPrice=29&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=29&maxPrice=30&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=30&maxPrice=31&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=31&maxPrice=32&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=32&maxPrice=33&page=1",
+                "https://www.aliexpress.com/premium/women-shoes.html?trafficChannel=ppc&d=y&CatId=0&SearchText=women+shoes&ltype=premium&SortType=default&minPrice=33&maxPrice=34&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=34&maxPrice=35&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=35&maxPrice=36&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=36&maxPrice=37&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=37&maxPrice=38&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=38&maxPrice=40&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=40&maxPrice=42&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=42&maxPrice=44&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=44&maxPrice=46&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=46&maxPrice=48&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=48&maxPrice=50&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=50&maxPrice=52&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=52&maxPrice=54&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=54&maxPrice=56.5&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=56.5&maxPrice=59.5&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=59.5&maxPrice=63&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=63&maxPrice=67&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=67&maxPrice=71.5&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=71.5&maxPrice=77&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=77&maxPrice=85&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=85&maxPrice=95&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=95&maxPrice=107&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=107&maxPrice=132&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=132&maxPrice=292&page=1",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=0&SearchText=women+shoes&ltype=wholesale&SortType=default&minPrice=292&maxPrice=5000&page=1"
+            ],
+            "Bags":[
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=0.1&maxPrice=1",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=1&maxPrice=1.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=1.5&maxPrice=2",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=2&maxPrice=2.3",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=2.3&maxPrice=2.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=2.5&maxPrice=2.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=2.8&maxPrice=3",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=3&maxPrice=3.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=3.5&maxPrice=3.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=3.8&maxPrice=4",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=4&maxPrice=4.3",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=4.3&maxPrice=4.6",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=4.6&maxPrice=4.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=4.8&maxPrice=5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=5&maxPrice=5.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=5.5&maxPrice=6",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=6&maxPrice=6.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=6.5&maxPrice=7",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=7&maxPrice=7.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=7.5&maxPrice=7.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=7.8&maxPrice=8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=8&maxPrice=8.4",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=8.4&maxPrice=8.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=8.8&maxPrice=9",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=9&maxPrice=9.3",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=9.3&maxPrice=9.6",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=9.6&maxPrice=10",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=10&maxPrice=10.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=10.5&maxPrice=11",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=11&maxPrice=11.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=11.5&maxPrice=11.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=11.8&maxPrice=12.1",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=12.1&maxPrice=12.4",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=12.4&maxPrice=12.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=12.8&maxPrice=13",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=13&maxPrice=13.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=13.5&maxPrice=13.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=13.8&maxPrice=14",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=14&maxPrice=14.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=14.5&maxPrice=14.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=14.8&maxPrice=15",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=15&maxPrice=15.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=15.5&maxPrice=15.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=15.8&maxPrice=16",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=16&maxPrice=16.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=16.5&maxPrice=16.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=16.8&maxPrice=17",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=17&maxPrice=17.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=17.5&maxPrice=17.8",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=17.8&maxPrice=18",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=18&maxPrice=18.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=18.5&maxPrice=19",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=19&maxPrice=19.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=19.5&maxPrice=20",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=20&maxPrice=20.5",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=20.5&maxPrice=21",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=21&maxPrice=22",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=22&maxPrice=23",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=23&maxPrice=24",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=24&maxPrice=25",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=25&maxPrice=26",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=26&maxPrice=27",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=27&maxPrice=28",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=28&maxPrice=30",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=30&maxPrice=32",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=32&maxPrice=35",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=35&maxPrice=40",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=40&maxPrice=45",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=45&maxPrice=50",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=50&maxPrice=55",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=55&maxPrice=60",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=60&maxPrice=65",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=65&maxPrice=80",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=80&maxPrice=100",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=100&maxPrice=150",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=150&maxPrice=250",
+                "https://www.aliexpress.com/category/200010063/women-bags.html?trafficChannel=main&catName=women-bags&CatId=200010063&ltype=wholesale&SortType=default&minPrice=250&maxPrice=50000"
+            ],
+            "Shawl/Scarf":[
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=scarf+women&ltype=wholesale&SortType=default&minPrice=0.1&maxPrice=5",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=scarf+women&ltype=wholesale&SortType=default&minPrice=5&maxPrice=10",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=scarf+women&ltype=wholesale&SortType=default&minPrice=10&maxPrice=20",
+                "https://www.aliexpress.com/wholesale?trafficChannel=main&d=y&CatId=200001340&SearchText=scarf+women&ltype=wholesale&SortType=default&minPrice=20&maxPrice=20000"
             ]
         } 
     },
@@ -1186,7 +1770,7 @@
         "base_url":"https://www.jollychic.com",
         "domains_subscription_id":47,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
         "time":2200,
         "is_active":false,
@@ -1216,10 +1800,10 @@
         "base_url":"https://en-global.namshi.com",
         "domains_subscription_id":49,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
         "is_active":false,
-        "time":1000,
+        "time":200,
         "popup_close":"document.querySelector('button#wzrk-cancel').click();document.querySelector('a.nmModal__close').click();",
         "next_page":"a#next_page",
         "product_href_selector":"li.listing.closed a",
@@ -1358,10 +1942,10 @@
         "base_url":"https://www.missoma.com",
         "domains_subscription_id":52,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
         "next_page":"button.load-more-products.mi-button.mi-full-width.mi-text--center-align",
-        "time":2200,
+        "time":200,
         "is_active":false,
         "product_href_selector":"div.ProductItem a.ProductItem__ImageWrapper",
         "urls":{
@@ -1592,9 +2176,9 @@
         "base_url":"https://www.akakce.com",
         "domains_subscription_id":59,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
-        "time":800,
+        "time":200,
         "is_active":false,
         "next_page":"p[class*='pager'] a:not([onclick='return false']):last-child",
         "product_href_selector":"ul.pl_v8.qv_v8 li[class=\"w\"] a.pw_v8",
@@ -1663,7 +2247,7 @@
         "base_url":"https://www.cimri.com",
         "domains_subscription_id":60,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
         "time":800,
         "is_active":false,
@@ -1738,7 +2322,7 @@
         "base_url":"https://www.epey.com",
         "domains_subscription_id":61,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
         "time":2200,
         "is_active":false,
@@ -1755,10 +2339,10 @@
         "base_url":"https://www.gittigidiyor.com",
         "domains_subscription_id":62,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
         "next_page":"nav[aria-label='pagination navigation'] li:last-child a",
-        "time":2200,
+        "time":250,
         "is_active":false,
         "product_href_selector":"article[data-cy='product-card-item'] a",
         "urls":{
@@ -1774,7 +2358,7 @@
         "base_url":"https://easycep.com",
         "domains_subscription_id":63,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
         "time":800,
         "is_active":false,
@@ -1968,8 +2552,8 @@
         "base_url":"https://kutahyaporselen.com",
         "domains_subscription_id":65,
         "render" : true,
-        "scroll":true,
-        "time":2000,
+        "scroll":false,
+        "time":200,
         "is_category":"ul.fl.breadcrumb li span",
         "is_active":false,
         "next":true,
@@ -2559,9 +3143,9 @@
         "base_url":"https://www.noon.com",
         "domains_subscription_id":69,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
-        "time":2200,
+        "time":200,
         "is_active":false,
         "next_page":"li.next a",
         "product_href_selector":"div.productContainer a",
@@ -2592,9 +3176,9 @@
         "base_url":"https://www.noon.com",
         "domains_subscription_id":70,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
-        "time":2200,
+        "time":200,
         "is_active":false,
         "next_page":"li.next a",
         "product_href_selector":"div.productContainer a",
@@ -2744,10 +3328,10 @@
         "base_url":"https://www.amazon.com.tr",
         "domains_subscription_id":76,
         "render" : true,
-        "scroll":true,
+        "scroll":false,
         "next":true,
         "next_page":"ul.a-pagination li.a-last a",
-        "time":2200,
+        "time":1000,
         "is_active":false,
         "product_href_selector":"div.s-main-slot.s-search-results div.s-result-item a.a-link-normal.s-no-outline",
         "urls":{
@@ -3455,7 +4039,7 @@
     "base_url":"https://www.boyner.com.tr",
     "domains_subscription_id":88,
     "render" : true,
-    "scroll":true,
+    "scroll":false,
     "next":true,
     "next_page":"div.pager-wrap li.next-item a",
     "time":2200,
@@ -3489,7 +4073,7 @@
     "base_url":"https://www.korayspor.com",
     "domains_subscription_id":96,
     "render" : true,
-    "scroll":true,
+    "scroll":false,
     "next":true,
     "next_page":"div.urunPaging_pageNavigation span a:nth-child(2)",
     "time":2200,
@@ -3507,10 +4091,10 @@
     "base_url":"https://www.modacruz.com",
     "domains_subscription_id":98,
     "render" : true,
-    "scroll":true,
+    "scroll":false,
     "next":true,
     "next_page":"a[title='İLERİ']",
-    "time":2200,
+    "time":200,
     "is_active":false,
     "product_href_selector":"div[class='_k9 _ly'] a[title='Ürün Detay'] ",
     "urls":{
@@ -3526,7 +4110,7 @@
     "base_url":"https://www.morhipo.com",
     "domains_subscription_id":99,
     "render" : true,
-    "scroll":true,
+    "scroll":false,
     "next":false,
     "next_page":"span.btn-text",
     "time":2200,
@@ -3544,7 +4128,7 @@
     "base_url":"https://www.sportive.com.tr",
     "domains_subscription_id":105,
     "render" : true,
-    "scroll":true,
+    "scroll":false,
     "next":true,
     "next_page":"a.pagiation-arrow.next ",
     "time":2200,
@@ -3563,7 +4147,7 @@
     "base_url":"https://www.vipcocuk.com",
     "domains_subscription_id":112,
     "render" : true,
-    "scroll":true,
+    "scroll":false,
     "next":true,
     "next_page":"a#ctl00_u33_ascArama_urun_ascUrunList_ascPagingDataAlt_lnkLastPage span",
     "time":2200,
@@ -3580,7 +4164,7 @@
     "base_url":"https://www.yalispor.com.tr",
     "domains_subscription_id":113,
     "render" : true,
-    "scroll":true,
+    "scroll":false,
     "next":true,
     "next_page":"ul.pagination li:last-child a",
     "time":2200,
@@ -3615,7 +4199,7 @@
     "base_url":"https://www.pttavm.com",
     "domains_subscription_id":120,
     "render" : true,
-    "scroll":true,
+    "scroll":false,
     "next":true,
     "next_page":"div.pagination a.pagination-page:last-child",
     "time":2200,
@@ -3632,10 +4216,10 @@
     "base_url":"https://www.banyomoda.com.tr",
     "domains_subscription_id":121,
     "render" : true,
-    "scroll":true,
+    "scroll":false,
     "next":true,
     "next_page":"div#pager-wrapper a.next",
-    "time":1000,
+    "time":2000,
     "is_active":false,
     "product_href_selector":"div.catalog_product_box a.image-wrapper.fl",
     "urls":{
@@ -3669,7 +4253,7 @@
     "base_url":"https://tr.aliexpress.com",
     "domains_subscription_id":123,
     "render" : true,
-    "scroll":true,
+    "scroll":false,
     "next":true,
     "next_page":"div.list-pagination button.next-next",
     "time":2200,

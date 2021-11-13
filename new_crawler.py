@@ -45,6 +45,9 @@ def get_results(domain_subscription_id):
     one_page_count = subscription_selectors.get("one_page_count")
     next_page_path = subscription_selectors.get("next_page_path")
     select_attribute = subscription_selectors.get("select_attribute")
+    split_after_count_text = subscription_selectors.get("split_after_count_text")
+    split_before_count_text = subscription_selectors.get("split_before_count_text")
+    wait_before_load = subscription_selectors.get("wait_before_load")
     # is active true olarak başlanan yer
     if is_active:
         createFolder('./{0}/'.format(name)) 
@@ -64,6 +67,9 @@ def get_results(domain_subscription_id):
                         page.set_default_navigation_timeout(1000000000)
                         page.goto(category_link)
                         page.wait_for_load_state()
+                        # bekletme koymak için
+                        if wait_before_load:
+                            page.wait_for_timeout(wait_before_load)
                         page_content = page.content()
                         soup = BeautifulSoup(page_content, 'html.parser')
                         #page.wait_for_timeout(30000000)
@@ -154,13 +160,22 @@ def get_results(domain_subscription_id):
             else:
                 # Browser açılmayan yer  
                 for category_link in link:
+                    print("go to category link",category_link)
                     response = requests.get(category_link) 
                     page_content = response.content
                     soup = BeautifulSoup(page_content, 'html.parser')
                     count = soup.select(total_product_count)
-                    total_text = count[0].text
-                    total_text = total_text.replace(",","").replace(".","")
-                    page_count_text = total_text
+                    if count:
+                        total_text = count[0].text
+                        if split_after_count_text:
+                            total_text_split_after = total_text.split(split_after_count_text)[1]
+                        if split_before_count_text:
+                            total_text_split_after = total_text_split_after.split(split_before_count_text)[0]
+                            total_text = total_text_split_after
+                    else:
+                        total_text = "1"
+                    
+                    page_count_text = total_text.replace(",","").replace(".","")
                     page_count_one = page_count(page_count_text,one_page_count)
                     print("page_count_one-------------",page_count_one)
                     for page in range(1,page_count_one+1):
@@ -196,7 +211,6 @@ def page_count(page_count_text,one_page_count):
             count = catch[0]
 
     page_count = math.ceil(int(count) / int(one_page_count))
-
     return page_count
 
 # dosyaya yazma işlemleri
