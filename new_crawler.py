@@ -178,8 +178,9 @@ def get_results(domain_subscription_id):
                     page_count_text = total_text.replace(",","").replace(".","")
                     page_count_one = page_count(page_count_text,one_page_count)
                     print("page_count_one-------------",page_count_one)
+                    url_next_path =  next_page_path_control(next_page_path,category_link, product_href_selector)
                     for page in range(1,page_count_one+1):
-                        url = category_link + next_page_path+"{0}".format(page)
+                        url = category_link + url_next_path+"{0}".format(page)
                         response = requests.get(url)
                         print("Go to url ------",url)
                         soup = BeautifulSoup(response.content,"lxml")
@@ -203,6 +204,31 @@ def get_results(domain_subscription_id):
                                             category = key    
                                         write_file(path1,product_href,base_url,domains_subscription_id1,category)
                             
+                            
+def next_page_path_control(next_page_path, category_link,product_href_selector):
+    for key, value in next_page_path.items():
+        if key == "path_1":
+            key_path = value
+            url = category_link + key_path+"{0}".format(1)
+            response = requests.get(url)
+            print("Go to url ------",url)
+            soup = BeautifulSoup(response.content,"lxml")
+            result = soup.select(product_href_selector)
+            if result:
+                if len(result) > 1:
+                    return key_path
+                    
+        elif key == "path_2":
+            key_path = value
+            url = category_link + key_path+"{0}".format(1)
+            response = requests.get(url)
+            print("Go to url ------",url)
+            soup = BeautifulSoup(response.content,"lxml")
+            result = soup.select(product_href_selector)
+            if result:
+                if len(result) > 1:
+                    return key_path
+                                              
 # page count hesaplanan yer
 def page_count(page_count_text,one_page_count):
     p = '[\d]+[.,\d]+|[\d]*[.][\d]+|[\d]+'

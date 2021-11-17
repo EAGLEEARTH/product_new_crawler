@@ -81,7 +81,10 @@
         "domains_subscription_id":5,
         "total_product_count":"div.dscrptn",
         "one_page_count":24,
-        "next_page_path":"&pi=",
+        "next_page_path":{
+            "path_1":"&pi=",
+            "path_2":"?pi="
+        },
         "select_attribute":"href",
         "render" : false,
         "scroll":true,
@@ -1834,14 +1837,17 @@
         "domains_subscription_id":50,
         "total_product_count":"span.top-info__title-sum",
         "one_page_count":120,
-        "next_page_path":"&page=",
+        "next_page_path":{
+            "path_1":"?page=",
+            "path_2":"&page="
+        },
         "select_attribute":"href",
         "render" : false,
         "scroll":true,
         "next":true,
         "time":2200,
         "is_active":false,
-        "product_href_selector":"div.S-product-item__wrapper a",
+        "product_href_selector":"section[role='main'] div.S-product-item__wrapper a",
         "urls":{
 
             "Shawl/Scarf":[
@@ -1873,14 +1879,17 @@
         "domains_subscription_id":51,
         "total_product_count":"span.top-info__title-sum",
         "one_page_count":120,
-        "next_page_path":"&page=",
+        "next_page_path":{
+            "path_1":"?page=",
+            "path_2":"&page="
+        },
         "select_attribute":"href",
         "render" : false,
         "scroll":true,
         "next":true,
         "time":2200,
         "is_active":false,
-        "product_href_selector":"div.S-product-item__wrapper a",
+        "product_href_selector":"section[role='main'] div.S-product-item__wrapper a",
         "urls":{
 
             "Shawl/Scarf":[
@@ -1965,14 +1974,17 @@
         "domains_subscription_id":53,
         "total_product_count":"span.top-info__title-sum",
         "one_page_count":120,
-        "next_page_path":"&page=",
+        "next_page_path":{
+            "path_1":"?page=",
+            "path_2":"&page="
+        },
         "select_attribute":"href",
         "render" : false,
         "scroll":true,
         "next":true,
         "time":2200,
         "is_active":false,
-        "product_href_selector":"div.S-product-item__wrapper a",
+        "product_href_selector":"section[role='main'] div.S-product-item__wrapper a",
         "urls":{
 
             "Shawl/Scarf":[
@@ -2017,14 +2029,17 @@
         "domains_subscription_id":54,
         "total_product_count":"span.top-info__title-sum",
         "one_page_count":120,
-        "next_page_path":"&page=",
+        "next_page_path":{
+            "path_1":"?page=",
+            "path_2":"&page="
+        },
         "select_attribute":"href",
         "render" : false,
         "scroll":true,
         "next":true,
         "time":2200,
         "is_active":false,
-        "product_href_selector":"div.S-product-item__wrapper a",
+        "product_href_selector":"section[role='main'] div.S-product-item__wrapper a",
         "urls":{
 
             "Dress":[
@@ -2059,14 +2074,17 @@
         "domains_subscription_id":55,
         "total_product_count":"span.top-info__title-sum",
         "one_page_count":120,
-        "next_page_path":"?page=",
+        "next_page_path":{
+            "path_1":"?page=",
+            "path_2":"&page="
+        },
         "select_attribute":"href",
         "render" : false,
         "scroll":true,
         "next":true,
         "time":2200,
-        "is_active":false,
-        "product_href_selector":"div.S-product-item__wrapper a",
+        "is_active":true,
+        "product_href_selector":"section[role='main'] div.S-product-item__wrapper a",
         "urls":{
 
             "Dress":[
@@ -2098,14 +2116,17 @@
         "domains_subscription_id":56,
         "total_product_count":"span.top-info__title-sum",
         "one_page_count":120,
-        "next_page_path":"&page=",
+        "next_page_path":{
+            "path_1":"?page=",
+            "path_2":"&page="
+        },
         "select_attribute":"href",
         "render" : false,
         "scroll":true,
         "next":true,
         "time":2200,
         "is_active":false,
-        "product_href_selector":"div.S-product-item__wrapper a",
+        "product_href_selector":"section[role='main'] div.S-product-item__wrapper a",
         "urls":{
 
             "Dress":[
@@ -2138,14 +2159,17 @@
         "domains_subscription_id":57,
         "total_product_count":"span.top-info__title-sum",
         "one_page_count":120,
-        "next_page_path":"&page=",
+        "next_page_path":{
+            "path_1":"?page=",
+            "path_2":"&page="
+        },
         "select_attribute":"href",
         "render" : false,
         "scroll":true,
         "next":true,
         "time":2200,
         "is_active":false,
-        "product_href_selector":"div.S-product-item__wrapper a",
+        "product_href_selector":"section[role='main'] div.S-product-item__wrapper a",
         "urls":{
 
             "Dress":[
@@ -4096,7 +4120,7 @@
     "next_page":"a[title='İLERİ']",
     "time":200,
     "is_active":false,
-    "product_href_selector":"div[class='_k9 _ly'] a[title='Ürün Detay'] ",
+    "product_href_selector":"div[class='_k9 _ly'] a[title='Ürün Detay']",
     "urls":{
         "Galatasaray":[
             "https://www.modacruz.com/marka/gs-store?sta=1&sta=2",
@@ -4130,7 +4154,7 @@
     "render" : true,
     "scroll":false,
     "next":true,
-    "next_page":"a.pagiation-arrow.next ",
+    "next_page":"a.pagiation-arrow.next:not([class*='js-passive'])",
     "time":2200,
     "is_active":false,
     "product_href_selector":"div.product-item-wrapper i.product-color.hidden + a",
