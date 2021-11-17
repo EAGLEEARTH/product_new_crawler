@@ -178,7 +178,10 @@ def get_results(domain_subscription_id):
                     page_count_text = total_text.replace(",","").replace(".","")
                     page_count_one = page_count(page_count_text,one_page_count)
                     print("page_count_one-------------",page_count_one)
-                    url_next_path =  next_page_path_control(next_page_path,category_link, product_href_selector)
+                    if type(next_page_path) == str:
+                        url_next_path = next_page_path
+                    else:
+                        url_next_path =  next_page_path_control(next_page_path,category_link, product_href_selector)
                     for page in range(1,page_count_one+1):
                         url = category_link + url_next_path+"{0}".format(page)
                         response = requests.get(url)
