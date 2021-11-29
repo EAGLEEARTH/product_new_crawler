@@ -48,6 +48,7 @@ def get_results(domain_subscription_id):
     split_after_count_text = subscription_selectors.get("split_after_count_text")
     split_before_count_text = subscription_selectors.get("split_before_count_text")
     wait_before_load = subscription_selectors.get("wait_before_load")
+    split_text = subscription_selectors.get("split_text")
     # is active true olarak başlanan yer
     if is_active:
         createFolder('./{0}/'.format(name)) 
@@ -154,6 +155,7 @@ def get_results(domain_subscription_id):
                                         break
                                 else:
                                     break
+                                
 
                         browser.close()
             # render false
@@ -161,6 +163,7 @@ def get_results(domain_subscription_id):
                 # Browser açılmayan yer  
                 for category_link in link:
                     print("go to category link",category_link)
+                   
                     response = requests.get(category_link) 
                     page_content = response.content
                     soup = BeautifulSoup(page_content, 'html.parser')
@@ -316,7 +319,7 @@ def scroll_page(page,time):
 if __name__ == "__main__":
     domains_subscription = [3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,19,20,21,22,23,24,25,26,27,28,29,30,31,33,34,
         35,36,38,39,40,41,44,45,46,47,49,50,51,52,53,54,55,56,57,69,70,71,72,73,74,75,76,77,85,86,88,89,96,98,99,105,
-        112,113,115,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,59,60,61,62,63,64,65,66,67,68
+        112,113,115,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,59,60,61,62,63,64,65,66,67,68,103,137,139,138,140,141,142,143,144,145,146,147,148,149,150,151
         ]
     
     for k in domains_subscription:
